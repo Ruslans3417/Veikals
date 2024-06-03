@@ -1,0 +1,35 @@
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 138px;
+  margin-bottom: 100px;
+  padding-bottom: 63px;
+}
+
+.box {
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.box a {
+  display: block;
+  padding: 10px;
+  background-color: #9a7dac;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
