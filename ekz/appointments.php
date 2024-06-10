@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param("isss", $user_id, $appointmentDate, $appointmentTime, $procedure_id);
         $stmt->execute();
     } else {
-        echo "Пожалуйста, заполните все поля формы.";
+        echo "Lūdzu, uzrakst visu formu.";
     }
 }
 ?>
