@@ -220,17 +220,17 @@ include 'header.php';
             <!-- Раздел управления процедурами -->
             <div class="card mb-4">
                 <div class="card-header">
-                    Управление Процедурами
+                    Manage Procedure 
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Название</th>
-                                <th>Цена</th>
-                                <th>Изображение</th>
-                                <th>Действия</th>
+                                <th>Nosaukums</th>
+                                <th>Cena</th>
+                                <th>Foto</th>
+                                <th>Darbiba</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -250,17 +250,17 @@ include 'header.php';
                                         <td>
                                             <form action='edit_procedure.php' method='get' style='display:inline-block;'>
                                                 <input type='hidden' name='id' value='" . $row['id'] . "'>
-                                                <button type='submit' class='btn btn-warning btn-sm'>Редактировать</button>
+                                                <button type='submit' class='btn btn-warning btn-sm'>Redacted</button>
                                             </form>
                                             <form action='delete_procedure.php' method='post' style='display:inline-block;'>
                                                 <input type='hidden' name='id' value='" . $row['id'] . "'>
-                                                <button type='submit' class='btn btn-danger btn-sm'>Удалить</button>
+                                                <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
                                             </form>
                                         </td>
                                     </tr>";
                                 }
                             } else {
-                                echo "<tr><td colspan='6'>Процедуры не найдены</td></tr>";
+                                echo "<tr><td colspan='6'>Procedura nav apmeklējis</td></tr>";
                             }
                             ?>
                         </tbody>
@@ -271,24 +271,24 @@ include 'header.php';
             <!-- Раздел добавления процедуры -->
             <div class="card mb-4">
                 <div class="card-header">
-                    Добавить Процедуру
+                    Pievienot Procedūru 
                 </div>
                 <div class="card-body">
                     <form action="add_procedure.php" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label for="procedureName">Название Процедуры</label>
+                            <label for="procedureName">Procedūras Nosaukums</label>
                             <input type="text" class="form-control" id="procedureName" name="procedureName" placeholder="Введите название процедуры" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="procedurePrice">Цена Процедуры</label>
+                            <label for="procedurePrice">Procedūras Cena</label>
                             <input type="number" step="0.01" min="0" class="form-control" id="procedurePrice" name="procedurePrice" placeholder="Введите цену процедуры" required>
                         </div>
                         <div class="form-group">
-                            <label for="procedureImage">Изображение Процедуры</label>
+                            <label for="procedureImage">Procedūras Foro</label>
                             <input type="file" class="form-control-file" id="procedureImage" name="procedureImage" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Добавить Процедуру</button>
+                        <button type="submit" class="btn btn-primary">Pievieno Procedūru</button>
                     </form>
                 </div>
             </div>
