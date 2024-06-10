@@ -1,0 +1,16 @@
+  .carousel-container h2 {
+    text-align: center;
+  }
+
+  .ant-card-cover img {
+    width: 90%; /* Уменьшьте значение ширины до желаемого размера */
+  }
+
+  .carousel-container {
+    width: 40%; /* Уменьшьте значение ширины до желаемого размера */
+    margin:  auto; /* Устанавливаем автоматические отступы по горизонтали, чтобы карусель была по центру экрана */
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+
